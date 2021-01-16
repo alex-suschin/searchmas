@@ -4,7 +4,7 @@ Number.isNaN = Number.isNaN || function(value) {
 
 $(function() {
 
-    jQuery(".menu a").click(function() {
+    jQuery(".menu a, .anchor").click(function() {
         elementClick = jQuery(this).attr("href")
         destination = jQuery(elementClick).offset().top;
         jQuery("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination }, 700);
@@ -16,18 +16,16 @@ $(function() {
         $(this).closest('.form-step').next().slideDown();
     });
 
-    var worksThumbs = new Swiper('.team-slider', {
-        spaceBetween: 30,
+    var swiper = new Swiper('.team-slider', {
         slidesPerView: 4,
+        spaceBetween: 30,
         freeMode: true,
-        watchSlidesVisibility: true,
-        watchSlidesProgress: true,
-    });
-
-    $('.price-bnts a').click(function() {
-        $('.price-bnts').find('.active').removeClass('active');
-        $(this).addClass('active');
-        $('.price-box').find('.price-box-elem').hide(100);
-        $('#' + $(this).data('switch')).show(100);
+        pagination: {
+            el: '.team-pagination',
+        },
+        navigation: {
+            nextEl: '.team-button-next',
+            prevEl: '.team-button-prev',
+        }
     });
 })

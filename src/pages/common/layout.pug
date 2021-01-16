@@ -9,7 +9,7 @@ html(lang="ru")
             link(rel="stylesheet" href="css/vendors.min.css")
             link(rel="stylesheet" href="css/style.css")
     body
-        .main-wrap
+        .main-wrap#top
             .line.line-1
             .line.line-2
             .line.line-3
@@ -201,10 +201,52 @@ html(lang="ru")
                         .title <b>Ключевые</b> лица компании
                         .team-slider.swiper-container
                             .team-wrapper.swiper-wrapper
-                                .team-slide.swiper-slider
-                            .swiper-pagination
+                                .team-slide.swiper-slide
+                                    .team-slide-img
+                                        <img src="img/sl-1.png" alt="" />
+                                    .team-slide-name Константинов Константин
+                                    .team-slide-desc менеджер (9 лет в HR)
+                                .team-slide.swiper-slide
+                                    .team-slide-img
+                                        <img src="img/sl-2.png" alt="" />
+                                    .team-slide-name Константинов Константин
+                                    .team-slide-desc менеджер (9 лет в HR)
+                                .team-slide.swiper-slide
+                                    .team-slide-img
+                                        <img src="img/sl-1.png" alt="" />
+                                    .team-slide-name Константинов Константин
+                                    .team-slide-desc менеджер (9 лет в HR)
+                                .team-slide.swiper-slide
+                                    .team-slide-img
+                                        <img src="img/sl-2.png" alt="" />
+                                    .team-slide-name Константинов Константин
+                                    .team-slide-desc менеджер (9 лет в HR)
+                                .team-slide.swiper-slide
+                                    .team-slide-img
+                                        <img src="img/sl-1.png" alt="" />
+                                    .team-slide-name Константинов Константин
+                                    .team-slide-desc менеджер (9 лет в HR)
+                                .team-slide.swiper-slide
+                                    .team-slide-img
+                                        <img src="img/sl-2.png" alt="" />
+                                    .team-slide-name Константинов Константин
+                                    .team-slide-desc менеджер (9 лет в HR)
+                            .swiper-pagination.team-pagination
                             .team-button-prev
                             .team-button-next
+
+                .contacts#contacts
+                    .container
+                        .contacts-box
+                            .contacts-box-item
+                                span Консультация по телефону
+                                b Круглосуточно
+                            .contacts-box-item
+                                span Режим работы
+                                b Пн-Вс: с 10:00 до 22:00
+                            .contacts-box-item
+                                span Телефон
+                                <a href="rel:88005553535">8 800 555 35 35</a>
 
             block footer
                 include footer

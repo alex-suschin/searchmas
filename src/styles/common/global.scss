@@ -937,9 +937,9 @@ select {
 }
 
 .team {
-    padding: 117px 0 0 0;
+    padding: 117px 0 109px 0;
     .title {
-        margin-bottom: 148px;
+        margin-bottom: 98px;
         text-align: center;
         font-weight: bold;
         font-size: 35px;
@@ -950,14 +950,204 @@ select {
     }
 }
 
+.team-slider {
+    padding: 50px 0 25px 0;
+}
+
 .team-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
     max-width: 255px;
     width: 100%;
     border: 1px solid #FF6543;
     box-sizing: border-box;
     border-radius: 15px;
-    padding: 0 0 0 0;
+    padding: 0 0 47px 0;
     min-height: 425px;
+}
+
+.team-slide-img {
+    position: absolute;
+    max-width: 220px;
+    width: 100%;
+    height: 330.5px;
+    top: -50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.team-slide-name {
+    position: relative;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 0 0 0 0;
+    margin-bottom: 9px;
+}
+
+.team-slide-name::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #FF6543;
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.team-slide-desc {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.team-button-next {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    right: 34.3%;
+    bottom: 8px;
+    background-color: #FF6543;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/next.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: none;
+    cursor: pointer;
+}
+
+.team-button-prev {
+    position: absolute;
+    left: 34.3%;
+    bottom: 8px;
+    width: 45px;
+    height: 45px;
+    background-color: #FF6543;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/prev.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    outline: none;
+    cursor: pointer;
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-pagination-bullet {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #19313E;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 5px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #FF6543;
+}
+
+.swiper-container-free-mode>.team-wrapper {
+    margin-bottom: 68px;
+}
+
+.contacts {
+    padding: 0 0 0 0;
+}
+
+.contacts-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 47px 48px 0;
+    border-bottom: 1px solid #FF6543;
+}
+
+.contacts-box-item {
+    span {
+        display: block;
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin-bottom: 6px;
+    }
+    b {
+        display: block;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    a {
+        display: block;
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+
+.footer {
+    padding: 58px 0 77px 0;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.policy {
+    display: block;
+    margin: 0 0px 0 60px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.anchor {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #FF6543;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-image: url(../img/arr-top.svg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
