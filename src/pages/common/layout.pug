@@ -3,16 +3,47 @@ html(lang="ru")
     block head
         head
             meta(charset="utf-8")
-            title Title your site
+            title Searchmas
             meta(content="width=device-width, initial-scale=1" name="viewport")
             meta(content="ie=edge" http-equiv="x-ua-compatible")
-            link(rel="stylesheet" href="css/style.min.css")
+            link(rel="stylesheet" href="css/vendors.min.css")
+            link(rel="stylesheet" href="css/style.css")
     body
-        block header
-            include header
-        block content
-        block footer
-            include footer
-        block scripts
-            script(src='js/vendors.min.js')
-            script(src='js/main.js')
+        .main-wrap
+            .line.line-1
+            .line.line-2
+            .line.line-3
+            .line.line-4
+            .line.line-5
+            block header
+                include header
+
+                .exs
+                    .container
+                        .exs-items
+                            .exs-item
+                                .exs-item-content
+                                    img(src="img/star.svg" alt="")
+                                    .exs-item-title 7 лет
+                                    .exs-item-desc в подборе персонала для ремонта техники
+                            .exs-item
+                                .exs-item-content
+                                    img(src="img/star.svg" alt="")
+                                    .exs-item-title 500 000 +
+                                    .exs-item-desc резюме по РФ в закрытой базе
+                            .exs-item
+                                .exs-item-content
+                                    img(src="img/star.svg" alt="")
+                                    .exs-item-title 8 экспертов
+                                    .exs-item-desc HR с опытом<br> в ремонте<br> от 8 лет
+                            .exs-item
+                                .exs-item-content
+                                    img(src="img/star.svg" alt="")
+                                    .exs-item-title 3 месяца
+                                    .exs-item-desc гарантии на каждого специалиста
+
+            block footer
+                include footer
+            block scripts
+                script(src='js/vendors.min.js')
+                script(src='js/main.js')
