@@ -18,7 +18,7 @@ html(lang="ru")
             block header
                 include header
 
-                .exs
+                .exs#about
                     .container
                         .exs-items
                             .exs-item
@@ -58,27 +58,153 @@ html(lang="ru")
                                 .small Результат рассчитывается приблизительно, для получения<br> точных данных обратитесь к нам
                             .calc__right
                                 form(method="POST" action="/" class="form-calc")
-                                    .form-calc-step-1
+                                    .form-calc-step-1.form-step
                                         .title Сколько человек проживает в вашем городе?
                                         .vars
                                             label.radio-label
-                                                input(type="radio" name="radio")
+                                                input(type="radio" checked name="radio" value="до 500 тыс.")
                                                 span до 500 тыс.
                                             label.radio-label
-                                                input(type="radio" name="radio")
+                                                input(type="radio" name="radio" value="до 1 млн.")
                                                 span до 1 млн.
                                             label.radio-label
-                                                input(type="radio" name="radio")
+                                                input(type="radio" name="radio" value="до 3 млн.")
                                                 span до 3 млн.
                                             label.radio-label
-                                                input(type="radio" name="radio")
+                                                input(type="radio" name="radio" value="более 3 млн.")
                                                 span более 3 млн.
                                         .bottom-calc
                                             .btn-next.btn-orange Далее
                                             .step-val 1/5
 
+                                    .form-calc-step-2.form-step(style="display: none;")
+                                        .title Есть ли у вас опыт в ремонте техники?
+                                        .vars
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="Да")
+                                                span Да
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="Нет")
+                                                span Нет
+                                        .bottom-calc
+                                            .btn-next.btn-orange Далее
+                                            .step-val 2/5
+
+                                    .form-calc-step-3.form-step(style="display: none;")
+                                        .title Сколько часов в день вы планируете работать?
+                                        .vars
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="До 4 часов")
+                                                span До 4 часов
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="От 4 до 8 часов")
+                                                span От 4 до 8 часов
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="больше 8 часов")
+                                                span больше 8 часов
+                                        .bottom-calc
+                                            .btn-next.btn-orange Далее
+                                            .step-val 3/5
+                                    
+                                    .form-calc-step-4.form-step(style="display: none;")
+                                        .title Какой комфортный график работы?
+                                        .vars
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="2-3 дня в неделю")
+                                                span 2-3 дня в неделю
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="3-5 дней в неделю")
+                                                span 3-5 дней в неделю
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="6 дней в неделю")
+                                                span 6 дней в неделю
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="Без выходных")
+                                                span Без выходных
+                                        .bottom-calc
+                                            .btn-next.btn-orange Далее
+                                            .step-val 4/5
+
+                                    .form-calc-step-5.form-step(style="display: none;")
+                                        .title Выберите направление работы
+                                        .vars
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="Ремонт стиральных и посудомоечных машин")
+                                                span Ремонт стиральных и посудомоечных машин
+                                            label.radio-label
+                                                input(type="radio" name="radio2" value="Ремонт холодильников")
+                                                span Ремонт холодильников
+                                        .bottom-calc
+                                            .btn-next.btn-orange Далее
+                                            .step-val 5/5
+
+                                    .form-calc-step-6.form-step(style="display: none;")
+                                        .total-price 25 000 ₽
+                                        .price-desc Ваш предполагаемый заработок. Хотите узнать точно?
+                                        span.input-tel
+                                            input(type="tel" placeholder="+7")
+                                        button.btn-orange Оставить заявку
+                                        .agree Нажимая кнопку “Пройти собеседование”,<br> я даю согласие на обработку персональных данных
+                        
+
+                .promlems#problems
+                    .container
+                        img.man(src="img/man.png" alt="")
+                        .title Хорошо известные нам <b>проблемы при поиске работы</b>
+                        .desc Работа (в идеале) — это такая деятельность, выполняя которую, вы<br> зарабатываете деньги и при этом получаете удовольствие от неё. 
+                        .promlems-items
+                            .promlems-box
+                                .promlems-item.blue
+                                    .promlems-item-img
+                                        <img src="img/smile-1.png" alt=""/>
+                                    .promlems-item-text Никто не хочет платить деньги, но работать заставляют много
+                                .promlems-item.pink
+                                    .promlems-item-img
+                                        <img src="img/smile-2.png" alt=""/>
+                                    .promlems-item-text 89% Работодателей не хотят идти на компромиссы, предлагая различные варианты графика работы
+                                .promlems-item.darkblue
+                                    .promlems-item-img
+                                        <img src="img/smile-3.png" alt=""/>
+                                    .promlems-item-text Мастером по ремонту техники не так много вакансий
 
 
+                            .promlems-box
+                                .promlems-item.yellow.black-text
+                                    .promlems-item-img
+                                        <img src="img/smile-4.png" alt=""/>
+                                    .promlems-item-text Все хорошие места в сервисных центрах уже заняты и в оставшихся будет мало заказов
+                                .promlems-item.orange
+                                    .promlems-item-img
+                                        <img src="img/smile-5.png" alt=""/>
+                                    .promlems-item-text Потратили время на 10 собеседований, но работы так и нет
+                                .promlems-item.lightblue.black-text
+                                    .promlems-item-img
+                                        <img src="img/smile-6.png" alt=""/>
+                                    .promlems-item-text Устроились на работу, а там вместо обещанной зарплаты только обещания
+                        .bottom-form
+                            form(method="POST" action="/" class="bottom-form")
+                                .title Запишитесь на собеседование
+                                .form-box
+                                    span <input required type="tel" placeholder="+7" />
+                                    button(type="submit" class="btn-orange") пройти собеседование
+                                .agree Нажимая кнопку “Пройти собеседование”, я даю согласие на обработку персональных данных
+
+                .note-2(style="background-image: url(img/note-bg.png);")
+                    .container
+                        <div class="note">
+                            <b>Важно!</b>
+                            <p>Обратившись в кадровые агентства или занявшись поиском самостоятельно, вы рискуете потратить время впустую. Мы же гарантируем трудоустройство после собеседования.</p>
+                        </div>
+
+                .team#team
+                    .container
+                        .title <b>Ключевые</b> лица компании
+                        .team-slider.swiper-container
+                            .team-wrapper.swiper-wrapper
+                                .team-slide.swiper-slider
+                            .swiper-pagination
+                            .team-button-prev
+                            .team-button-next
 
             block footer
                 include footer

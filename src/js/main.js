@@ -11,9 +11,14 @@ $(function() {
         return false;
     });
 
-    var worksThumbs = new Swiper('.works-thumbs', {
-        spaceBetween: 36,
-        slidesPerView: 3,
+    $('.btn-next').click(function() {
+        $(this).closest('.form-step').slideUp();
+        $(this).closest('.form-step').next().slideDown();
+    });
+
+    var worksThumbs = new Swiper('.team-slider', {
+        spaceBetween: 30,
+        slidesPerView: 4,
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
@@ -22,7 +27,7 @@ $(function() {
     $('.price-bnts a').click(function() {
         $('.price-bnts').find('.active').removeClass('active');
         $(this).addClass('active');
-        $('.price-box').find('.price-box-elem').hide();
-        $('#' + $(this).data('switch')).show();
+        $('.price-box').find('.price-box-elem').hide(100);
+        $('#' + $(this).data('switch')).show(100);
     });
 })
