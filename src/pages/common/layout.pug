@@ -42,6 +42,44 @@ html(lang="ru")
                                     .exs-item-title 3 месяца
                                     .exs-item-desc гарантии на каждого специалиста
 
+                .note-1
+                    .container
+                        .note 
+                            .title 
+                                <b>Мы единственные в России, кто специализируется на трудоустройстве персонала на вакансии по ремонту техники.<i> Мы выбрали своё направление<br> и специалисты в нём.</i></b>
+                                <span>Только за 2020 год мы обучили 1210 мастеров с опытом<br> и без и трудоустроили их.</span>
+
+                .calc(style="background-image: url(img/fomr-bg.png);")
+                    .container
+                        .calc-box
+                            .calc__left
+                                .desc пройдите тест на заработок
+                                .title Рассчитайте свою зарплату онлайн
+                                .small Результат рассчитывается приблизительно, для получения<br> точных данных обратитесь к нам
+                            .calc__right
+                                form(method="POST" action="/" class="form-calc")
+                                    .form-calc-step-1
+                                        .title Сколько человек проживает в вашем городе?
+                                        .vars
+                                            label.radio-label
+                                                input(type="radio" name="radio")
+                                                span до 500 тыс.
+                                            label.radio-label
+                                                input(type="radio" name="radio")
+                                                span до 1 млн.
+                                            label.radio-label
+                                                input(type="radio" name="radio")
+                                                span до 3 млн.
+                                            label.radio-label
+                                                input(type="radio" name="radio")
+                                                span более 3 млн.
+                                        .bottom-calc
+                                            .btn-next.btn-orange Далее
+                                            .step-val 1/5
+
+
+
+
             block footer
                 include footer
             block scripts
