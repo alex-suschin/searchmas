@@ -60,7 +60,7 @@ $(function() {
     });
 
     var swiper = new Swiper('.team-slider', {
-        slidesPerView: 4,
+        slidesPerView: 1,
         spaceBetween: 30,
         freeMode: true,
         pagination: {
@@ -69,6 +69,29 @@ $(function() {
         navigation: {
             nextEl: '.team-button-next',
             prevEl: '.team-button-prev',
+        },
+        breakpoints: {
+            992: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                freeMode: true
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+                freeMode: true
+            }
+        }
+    });
+
+    $('#hamburger-icon').click(function() {
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $('.mobile-menu').addClass('active');
+            $('html').addClass('ov-hidden');
+        } else {
+            $('.mobile-menu').removeClass('active');
+            $('html').removeClass('ov-hidden');
         }
     });
 })
