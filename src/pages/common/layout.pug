@@ -53,6 +53,8 @@ html(lang="ru")
                     .container
                         .calc-box
                             .calc__left
+                                .arr-form
+                                    <img src="img/arr-form.svg" alt="" />
                                 .desc пройдите тест на заработок
                                 .title Рассчитайте свою зарплату онлайн
                                 .small Результат рассчитывается приблизительно, для получения<br> точных данных обратитесь к нам
@@ -135,14 +137,17 @@ html(lang="ru")
                                                 input(type="radio" name="radio2" value="Ремонт холодильников")
                                                 span Ремонт холодильников
                                         .bottom-calc
-                                            .btn-next.btn-orange Далее
+                                            .btn-next.btn-orange.btn-pre-load Далее
                                             .step-val 5/5
 
                                     .form-calc-step-6.form-step(style="display: none;")
+                                        .pre-load
+                                            <img class="img-pre-load" src="img/loading.svg" alt="" />
+                                            span Рассчитываем ваш будущий заработок
                                         .total-price 25 000 ₽
                                         .price-desc Ваш предполагаемый заработок. Хотите узнать точно?
                                         span.input-tel
-                                            input(type="tel" placeholder="+7")
+                                            input(type="tel" required placeholder="+7")
                                         button.btn-orange Оставить заявку
                                         .agree Нажимая кнопку “Пройти собеседование”,<br> я даю согласие на обработку персональных данных
                         
