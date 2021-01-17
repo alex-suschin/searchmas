@@ -84,6 +84,76 @@ $(function() {
         }
     });
 
+    var swiperImg1 = new Swiper('.imgs-block-1', {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        freeMode: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        }
+    });
+
+    var swiperImg2 = new Swiper('.imgs-block-2', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        freeMode: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        }
+    });
+
+    var swiperImg3 = new Swiper('.imgs-block-3', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        freeMode: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        }
+    });
+
+    var swiperImg4 = new Swiper('.imgs-block-4', {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        freeMode: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        }
+    });
+
+    var swiperImg5 = new Swiper('.imgs-block-5', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        freeMode: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        }
+    });
+
+    var swiperImg6 = new Swiper('.imgs-block-6', {
+        direction: 'vertical',
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        freeMode: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        }
+    });
+
+
     $('#hamburger-icon').click(function() {
         $(this).toggleClass('active');
         if ($(this).hasClass('active')) {
